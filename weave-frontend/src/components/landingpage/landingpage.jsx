@@ -1,41 +1,41 @@
-import React, { useEffect, useState, useRef } from "react";
-import "./landingpage.css";
-import Featurebox from "./feature-box/feature-box";
-import boxData from "./feature-box/box-data";
-import image from "../../assets/title-picture.png";
-import Login from "../login/Login";
-import Signup from "../signup/Signup";
+import React, { useEffect, useState, useRef } from 'react';
+import './landingpage.css';
+import Featurebox from './feature-box/feature-box';
+import boxData from './feature-box/box-data';
+import image from '../../assets/title-picture.png';
+import Login from '../login/Login';
+import Signup from '../signup/Signup';
 // import Modal from "../Modal/Modal";
-import { Modal } from "antd";
+import { Modal } from 'antd';
 export const Landingpage = (props) => {
   const [feature, setFeature] = useState(boxData);
   const [login, setLogin] = useState(false);
   const [signup, setSignup] = useState(false);
   return (
-    <div className="landingPage">
-      <div className="landingWrapper">
+    <div className='landingPage'>
+      <div className='landingWrapper'>
         <nav>
-          <h3 className="navbar-weave">Weave</h3>
-          <ul className="navbar-links">
+          <h3 className='navbar-weave'>Weave</h3>
+          <ul className='navbar-links'>
             <li>
-              <a href="#" className="navbar-link">
+              <a href='#' className='navbar-link'>
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="navbar-link">
+              <a href='#' className='navbar-link'>
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="navbar-link">
+              <a href='#' className='navbar-link'>
                 Contact
               </a>
             </li>
           </ul>
           <button
-            type="button"
-            className="navbar-signup-button"
+            type='button'
+            className='navbar-signup-button'
             onClick={() => setLogin(true)}
           >
             Sign up/ login
@@ -43,39 +43,41 @@ export const Landingpage = (props) => {
         </nav>
         {/* title section */}
 
-        <div className="title-section">
-          <article className="title-container">
-            <h1 className="title-text">Streamline your</h1>
-            <h1 className="title-text second">Project workflow</h1>
-            <p className="title-paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, unde labore impedit recusandae quae voluptatum ut
-              nulla? Ex, necessitatibus error!
+        <div className='title-section'>
+          <article className='title-container'>
+            <h1 className='title-text'>Streamline your</h1>
+            <h1 className='title-text second'>Project workflow</h1>
+            <p className='title-paragraph'>
+              Collaborate with group members and faculty. Archive for all your
+              projects. With features such as an interactive calendar, proposal
+              management, Kanban board, file sharing, and activity heatmaps.
+              Allows organizations to streamline project supervision and
+              showcase the projects done in the organization.
             </p>
-            <div className="button-container">
+            <div className='button-container'>
               <button
-                type="button"
-                className="title-button signup"
+                type='button'
+                className='title-button signup'
                 onClick={() => setLogin(true)}
               >
                 Sign up / login
               </button>
-              <button type="button" className="title-button">
+              <button type='button' className='title-button'>
                 Learn more
               </button>
             </div>
           </article>
-          <aside className="title-picture">
-            <img src={image} alt="title-picture" />
+          <aside className='title-picture'>
+            <img src={image} alt='title-picture' />
           </aside>
         </div>
         {/* small box container section */}
-        <section className="feature-box">
+        <section className='feature-box'>
           {feature.map((feature) => {
             return <Featurebox key={feature.id} {...feature} />;
           })}
         </section>
-        <Modal open={login} footer="" onCancel={() => setLogin(false)}>
+        <Modal open={login} footer='' onCancel={() => setLogin(false)}>
           <Login
             setState={(status) => props.state(status)}
             handleSignup={() => {
@@ -84,7 +86,7 @@ export const Landingpage = (props) => {
             }}
           />
         </Modal>
-        <Modal open={signup} footer="" onCancel={() => setSignup(false)}>
+        <Modal open={signup} footer='' onCancel={() => setSignup(false)}>
           <Signup
             setState={(status) => props.state(status)}
             handleLogin={() => {
