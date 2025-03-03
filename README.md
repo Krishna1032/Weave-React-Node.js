@@ -1,37 +1,54 @@
 
-
-# 🌐 **Weave React NodeJS**  
+# <img src="Images/weave_logo_white.png" alt="Weave Logo" width="45" align="bottom"> **Weave React NodeJS**
 ![License](https://img.shields.io/badge/License-MIT-blue)  
 ![Technologies](https://img.shields.io/badge/Technologies-React%20%7C%20Node.js%20%7C%20PostgreSQL-green)  
 ![Azure](https://img.shields.io/badge/Hosted%20On-Azure-blueviolet)  
 
-**Weave** is a dynamic web application built using **React**, **Node.js**, and **PostgreSQL**, hosted on **Azure**. It offers a seamless workflow for organizations and users, combining intuitive UI/UX with powerful backend functionality.
+**Weave** is a dynamic web application built using **React**, **Node.js**, and **PostgreSQL**, hosted on **Azure**. It offers a seamless workflow for organizations and users, combining intuitive UI/UX with powerful backend functionality.  
 
 ---
 
 ## ✨ **Features**
 
 ### 🚀 **Organization and User Interaction**  
-- **Project Requests**:
-  - Organizations can post projects and manage user submissions.
-  - Users are notified of new requests and can submit their projects.
-- **Proposal Submission**:
-  - Users upload project proposals for organizations to review.
+- **Project Requests**:  
+  - Organizations can post projects and manage user submissions.  
+  - Users are notified of new requests and can submit their projects.   
 
-### 🧑‍💻 **User-Centric Features**  
-- **Individual Projects**:
-  - Users can create personal projects that are not visible to organizations.
+- **Proposal Submission**:  
+  - Users upload project proposals for organizations to review.
+    
+  ![Project Overview](Images/project_overview.png)   
+   
+
+### 🧑‍💻 **User-Centric Features**
+- **Explore Page**:  
+  - Discover public projects using tags and organizational filters.  
+  ![Explore](Images/explore.png)
+
+- **Individual Projects**:  
+  - Users can create personal projects that are not visible to organizations.  
   - Add members to the project by selecting from registered emails within the organization.
-- **Kanban Board**:
-  - Manage tasks visually for better workflow.
-- **File Uploader**:
+  ![Project File](Images/home.png)   
+
+- **Kanban Board**:  
+  - Manage tasks visually for better workflow.  
+  ![Kanban Board](Images/kanban_board.png)  
+
+- **File Uploader**:  
   - Upload files directly to projects for seamless collaboration.
-- **Pinned Projects**:
-  - Quickly access pinned projects from the navbar.
-- **Explore Page**:
-  - Discover public projects using tags and organizational filters.
-- **Activity Heatmap**:
+
+   ![Project File](Images/project_file.png)
+
+- **Activity Heatmap**:  
   - Visualize user task activity in the profile section.
+
+  ![Profile](Images/profile.png)  
+
+
+- **Pinned Projects**:  
+  - Quickly access pinned projects from the navbar.   
+---
 
 ### ⚙️ **Work in Progress**  
 - **Messaging System**:
@@ -164,7 +181,7 @@ weave-react-nodejs/
 
 ---
 
-## 🙌 **Usage**
+##**Usage**
 
 ### 🎯 **As an Organization**  
 1. Create project requests and manage user submissions.  
